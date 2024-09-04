@@ -1,6 +1,6 @@
 import random
 
-def get_username();
+def get_username():
     while True:
         user_name = input("Enter username here: ")
         if user_name:
@@ -8,15 +8,27 @@ def get_username();
             return user_name
         else:
             print("please enter username here.")
-        
-
-
-Player_One = []
-Computer_Player = []
 
 board = []
 for i in range (0, 5):
     board.append(["0"]*5)
     print(board)
+
+    def print_board(board):
+        for row in board:
+            print "".join(row)
+
+    print_board(board)
+
+    def random_row(board)
+    return randint(0, len(board)- 1)
+    def random_col(board)
+    return randint(0, len(board[0])- 1)
+
+
+
+Player_One = []
+Computer_Player = []
+
 
 new_game()
