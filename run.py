@@ -55,11 +55,18 @@ for i in range (0, 5):
                 continue
             elif: (row, column) == guess_col or (row, column) == guess_row:
             print("Bang, What A Hit! You Smashed My Ship")
-            game_board[row][column] = "X"
+            board[row][column] = "X"
             ships_left -= 1
             if ships_left == 0:
                 print("Congrats, you won!")
                 new_game()
+
+            def play_again():
+                again = str(input("Do you want to play again? (type yes or no): "))
+            if again == "yes":
+                else
+                print("Goodbye My Lover")
+                return
 
 Player_One = []
 Computer_Player = []
