@@ -35,6 +35,12 @@ for i in range (0, 5):
     else:
         print("Unlucky You missed!")
 
+        if guess_row (0-5) and guess_col not in range (0-5):
+            print ("You Must Enter A Number Between 1-5!")
+            except ValueError:
+            ("Only Enter A Number!")
+            
+
 Player_One = []
 Computer_Player = []
     
