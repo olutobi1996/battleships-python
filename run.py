@@ -25,10 +25,18 @@ for i in range (0, 5):
     def random_col(board)
     return randint(0, len(board[0])- 1)
 
+    ship_row = random_row(board)
+    ship_col = random_col(board)
+    guess_row = int(input("Guess_Row, Enter number between 0-5>:"))
+    guess_col = int(input("Guess_Col, Enter number between 0-5>:"))
 
+    if guess_row === ship_row and guess_col === ship_col:
+    print("Congrats You Took My Ship Down!")
+    else:
+        print("Unlucky You missed!")
 
 Player_One = []
 Computer_Player = []
-
+    
 
 new_game()
