@@ -1,8 +1,21 @@
 import random
 
+Player_One = []
+Computer_Player = []
+board = []
+
+"""Board Function
 """
-Enter username function and welcome to battleships game
-"""
+for i in range (0, 5):
+    board.append(["0"]*5)
+
+def random_row(board):
+    return random.randint(0, len(board)- 1)
+
+def random_col(board):
+    return random.randint(0, len(board[0])- 1)
+
+
 def get_username():
     while True:
         user_name = input("Enter username here: ")
@@ -18,34 +31,29 @@ Board Function
 board = []
 for i in range (0, 5):
     board.append(["0"]*5)
-    print(board)
+print(board)
 
-    def print_board(board):
+def print_board(board):
         for row in board:
             print ("".join(row))
 
-    print_board(board)
+print_board(board)
 
-    def random_row(board):
-        return randint(0, len(board)- 1)
-    def random_col(board):
-        return randint(0, len(board[0])- 1)
-
-    """
+"""
     Guess row and column function
      """
-    ship_row = random_row(board)
-    ship_col = random_col(board)
-    guess_row = int(input("Guess_Row, Enter number between 0-5>:"))
-    guess_col = int(input("Guess_Col, Enter number between 0-5>:"))
+ship_row = random_row(board)
+ship_col = random_col(board)
+guess_row = int(input("Guess_Row, Enter number between 0-5>:"))
+guess_col = int(input("Guess_Col, Enter number between 0-5>:"))
 
-    def play_game():
+def play_game():
 
     if guess_row == ship_row and guess_col == ship_col:
         print("Congrats You Took My Ship Down!")
     else:
         print("Unlucky You missed!")
-    except ValueError:
+        except ValueError:
         ("Only Enter A Number!")
 
         if guess_row (0-5) and guess_col not in range (0-5):
@@ -68,8 +76,6 @@ for i in range (0, 5):
                 print("Goodbye My Lover")
                 return
 
-Player_One = []
-Computer_Player = []
     
 
 new_game()
