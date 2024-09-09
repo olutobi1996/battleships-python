@@ -8,8 +8,8 @@ shots_taken = 1
 """
 Board Function
 """
-for i in range (0, 4):
-    board.append(["0"]*4)
+for i in range (0, 5):
+    board.append(["0"]*5)
 
 def random_row(board):
     return random.randint(0, len(board)- 1)
@@ -72,7 +72,7 @@ def play_game():
         else:
             print("Unlucky You missed!")
             board[guess_row][guess_col] = "O"
-            shots_taken =+1 [board]
+
 
     print("Congrats, you won!")
 
