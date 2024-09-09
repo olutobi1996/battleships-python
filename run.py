@@ -3,6 +3,7 @@ import random
 Player_One = []
 Computer_Player = []
 board = []
+shots_taken = 1
 
 """
 Board Function
@@ -71,6 +72,7 @@ def play_game():
         else:
             print("Unlucky You missed!")
             board[guess_row][guess_col] = "O"
+            shots_taken =+1 [board]
 
     print("Congrats, you won!")
 
