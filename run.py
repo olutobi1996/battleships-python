@@ -7,8 +7,8 @@ board = []
 """
 Board Function
 """
-for i in range (0, 5):
-    board.append(["0"]*5)
+for i in range (0, 4):
+    board.append(["0"]*4)
 
 def random_row(board):
     return random.randint(0, len(board)- 1)
@@ -38,7 +38,7 @@ username = get_username()
 
 def print_board(board):
     for row in board:
-        print ("".join(row))
+        print ("".join([col if col != "S" else "0" for col in row]))
 
 
 def play_game():
@@ -47,13 +47,13 @@ def play_game():
         print_board(board)
         while True:
             try:
-                guess_row = int(input("Guess_Row, Enter number between 0-5>:"))
-                guess_col = int(input("Guess_Col, Enter number between 0-5>:"))
+                guess_row = int(input("Guess_Row, Enter number between 0-4>:"))
+                guess_col = int(input("Guess_Col, Enter number between 0-4>:"))
             except ValueError:
                 print("Invalid Number")
                 continue
 
-            if guess_row not in range(0, 5) and guess_col not in range(0, 5):
+            if guess_row not in range(0, 4) and guess_col not in range(0, 4):
                 print ("You Must Enter A Number Between 1-5!")
                 continue
             elif board[guess_row][guess_col] == "X":
