@@ -48,33 +48,37 @@ guess_row = int(input("Guess_Row, Enter number between 0-5>:"))
 guess_col = int(input("Guess_Col, Enter number between 0-5>:"))
 
 def play_game():
+    ships_left = 1
+    while ships_left > 0:
+        print_board(board)
+        while True:
+            try:
+                guess_row = int(input("Guess_Row, Enter number between 0-5>:"))
+                guess_col = int(input("Guess_Col, Enter number between 0-5>:"))
+            except ValueError:
+                print("Invalid Number")
+                continue
 
-    if guess_row == ship_row and guess_col == ship_col:
-        print("Congrats You Took My Ship Down!")
-    else:
-        print("Unlucky You missed!")
-        except ValueError:
-        ("Only Enter A Number!")
-
-        if guess_row (0-5) and guess_col not in range (0-5):
-            print ("You Must Enter A Number Between 1-5!")
-            if: board [row] == "X" or board [col] == "X":
+            if guess_row not in range(0, 5) and guess_col not in range(0, 5):
+                print ("You Must Enter A Number Between 1-5!")
+                continue
+            elif board[guess_row][guess_col] == "X":
                 print("You Have Already Hit This Ship!")
                 continue
-            elif: (row, column) == guess_col or (row, column) == guess_row:
-            print("Bang, What A Hit! You Smashed My Ship")
-            board[row][column] = "X"
-            ships_left -= 1
-            if ships_left == 0:
-                print("Congrats, you won!")
-                new_game()
+            elif board[guess_row][guess_col] == "O":
+                print("You Have Already Hit This Spot!")
+                continue
+            break
 
-            def play_again():
-                again = str(input("Do you want to play again? (type yes or no): "))
-            if again == "yes":
-                else
-                print("Goodbye My Lover")
-                return
+        if ship_row == guess_row and ship_col == guess_col:
+            print("Bang, What A Hit! You Smashed My Ship")
+            board[guess_row][guess_col] = "X"
+            ships_left -= 1
+        else:
+            print("Unlucky You missed!")
+            board[guess_row][guess_col] = "O"
+
+    print("Congrats, you won!")
 
     
 
