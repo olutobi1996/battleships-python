@@ -52,7 +52,7 @@ def play_game():
                 guess_col = int(input("Guess_Col, Enter number between 0-4>:"))
             except ValueError:
                 print("Invalid Number")
-                continue
+            continue
 
             if guess_row not in range(0, 4) and guess_col not in range(0, 4):
                 print ("You Must Enter A Number Between 1-5!")
@@ -72,15 +72,19 @@ def play_game():
         else:
             print("Unlucky You missed!")
             board[guess_row][guess_col] = "O"
+            shots_taken+=1
 
 
     print("Congrats, you won!")
 
 def play_again():
-    again = str(input("Do you want to play again? (type yes or no): "))
-    if again == "yes":
-        print("again")
-    else:
+   while True:
+        play_game()
+        restart = input('do you want to restart Y/N?')
+        if restart == 'N'
+            break
+        elif restart == 'Y':
+            continue
         print("Goodbye My Lover")
         return
 
