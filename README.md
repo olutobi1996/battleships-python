@@ -2,7 +2,7 @@
 Battleships-Python is a command-line interface game. To represent the board, i created the letter "O" to represent each table column and row. When someone makes a move, the CLI will tell me and a ship will display on the user/computer board. To fire a shot you use the "X" and aim using any number below the range of the columns and rows which is 5.
 
 
-![Screenshot-pure-souls](https://github.com/olutobi1996/pure-souls/assets/169264552/9eca13f0-275d-4ec3-8659-40f1adb80f9b)
+![Python-BattleShips-Game]()
 
 ### Existing Features
 
@@ -43,21 +43,13 @@ The live link can be found here - https://code-institute-org.github.io/love-runn
 
 ## Credits 
 
+-Alot of the code was from knowledge that has been aquired over the python module.
+
 
 ### Content 
 
-- The icons in the Header were taken from [Font Awesome](https://fontawesome.com/)
-- The text for in-depth & techniques was knowledge from over the years.
-- how to style the layout of column layout was isnpired by https://www.w3schools.com/
-- Instructions on how to implement form validation & how to write the html code was on the Sign up form was taken from  
- inspiration from my [Love Running Project]
- - Table format was inspired by (https://codeinstitue.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
 ### Media
 
-- Both of the photos used on the page are used from https://www.pexels.com/
-- This site is a free image website
+- Some help from https://www.w3schools.com/python/ for correct syntax.
 
-- 'How to meditate for beginners' was taken from (https://www.youtube.com/) 
-- I clicked on the video and below the video there was a share button i then copied the code.
+- There was also some help from https://stackoverflow.co/teams/ for function ideas.
