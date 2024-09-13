@@ -1,4 +1,7 @@
 import random
+import colorama
+from colorama import Fore, Back, Style
+colorama.init()
 
 Player_One = []
 Computer_Player = []
@@ -11,11 +14,16 @@ Board Function
 for i in range (0, 5):
     board.append(["0"]*5)
 
+"""
+Ships Positions
+Ship 1
+"""
 def random_row(board):
     return random.randint(0, len(board)- 1)
 
 def random_col(board):
     return random.randint(0, len(board[0])- 1)
+
 
 """
 Guess row and column function
@@ -35,7 +43,7 @@ def get_username():
         else:
             print("please enter username here.")
 
-username = get_username()           
+username = get_username()    
 
 def print_board(board):
     for row in board:
@@ -89,3 +97,4 @@ def play_again():
         return
 
 play_game()
+
