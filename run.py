@@ -54,8 +54,8 @@ def play_game():
                 print("Invalid Number")
                 continue
 
-            if guess_row not in range(0, 4) and guess_col not in range(0, 4):
-                print ("You Must Enter A Number Between 1-5!")
+            if guess_row not in range(0, 5) and guess_col not in range(0, 5):
+                print ("You Must Enter A Number Between 0-4!")
                 continue
             elif board[guess_row][guess_col] == "X":
                 print("You Have Already Hit This Ship!")
@@ -71,8 +71,8 @@ def play_game():
             ships_left -= 1
         else:
             print("Unlucky You missed!")
-            board[guess_row][guess_col] = "O"
-            shots_taken+=1
+            board[guess_row][guess_col] = "P"
+           
 
 
     print("Congrats, you won!")
