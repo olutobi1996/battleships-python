@@ -38,7 +38,7 @@ def get_username():
     while True:
         user_name = input("Enter username here: ")
         if user_name:
-            print(f"The great Battleships, are you ready for war! {user_name}!")
+            print(Fore.RED + f"The great Battleships, are you ready for war! {user_name}!")
             return user_name
         else:
             print("please enter username here.")
@@ -47,7 +47,7 @@ username = get_username()
 
 def print_board(board):
     for row in board:
-        print ("".join([col if col != "S" else "0" for col in row]))
+        print (Back.GREEN +"".join([col if col != "S" else "0" for col in row]))
 
 
 def play_game():
@@ -66,7 +66,7 @@ def play_game():
                 print ("You Must Enter A Number Between 0-4!")
                 continue
             elif board[guess_row][guess_col] == "X":
-                print("You Have Already Hit This Ship!")
+                print('\033[31m' + "You Have Already Hit This Ship!")
                 continue
             elif board[guess_row][guess_col] == "O":
                 print("You Have Already Hit This Spot!")
