@@ -27,13 +27,18 @@ I Have also imported colorama into the run.py file, this has allowed me to style
 ## Testing 
 
 - The website has been tested numerous times to make sure the game runs smoothly, i also had a friend and my tutor test the game out on other computers to make sure.
+- Also within the game there are functions that test if the user has input something incorrect, i.e i created the board columns and rows to be within 5 by 5, so if the user his numbers outside this range there will be a message to say ""Invalid Number". I created this by using a loop to make sure the user enters a correct number and the loop will continue until they have done so.
+-I also created within the loop a "elif board[guess_row][guess_col] = print("You Have Already Hit This Spot!") continue" so if the user has already hit a ship they will have a message pop up saying "You Have Already Hit This Spot!".
 
 
 ### Validator Testing 
+https://pep8ci.herokuapp.com/#
+![](<Screenshot 2024-09-13 205617.png>)
 
+I Also tested my code by running it through the CI Python Linter which is a website that checks your python code for any errors. When i first pasted my code into the terminal ther were some whitespace errors and print statments and functions, i also ran into some character errors where some of my text was too long. I fixed this by shortening my text and also clearing the whitespace, upon doing this it ran through the terminal with no errors as you can see above with the picture and link.
 
 ### Unfixed Bugs
-There were no unfixed bugs in the final code but for days i had W3C validator show i had a "parse erorr" problem with my footer tag. For days i spent trying to solve problem on my own by using google and looking back through the project "love running", but still had no luck. So in the end with help from my tutor and slack team we solved the problem, it was simple error of putting footer tag within the body tag.
+There were no unfixed bugs but for a long time i had a challenge with adding more ships to the board, i spent many hours trying to figure out how to add more then one ship as everytime i would try a new function for the ships or extend the board size and try putting the ships into a class the code would break. This was my most challenging part of this project, apart from that i found writing the loop statements for the board functions and also defining variables i created along with importing colorama and adding styling go pretty smooth, by the end of the project after testing it various times and also with friends it had no bugs.
 
 ## Deployment
 
@@ -48,15 +53,9 @@ This section should describe the process you went through to deploy the project 
 The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
 
 
-## Credits 
+## Credits & Media
 
--Alot of the code was from knowledge that has been aquired over the python module.
-
-
-### Content 
-
-
-### Media
+-Alot of the code was from knowledge that has been aquired over the python module
 
 - Some help from https://www.w3schools.com/python/ for correct syntax.
 
