@@ -4,6 +4,9 @@ from colorama import Fore, Back, Style
 
 colorama.init()
 
+"""
+Board Variable and Shots_Taken variable
+"""
 board = []
 shots_taken = 1
 
@@ -16,8 +19,6 @@ for i in range(0, 5):
 Ships Positions
 Ship 1
 """
-
-
 def random_row(board):
     return random.randint(0, len(board) - 1)
 
@@ -27,7 +28,7 @@ def random_col(board):
 
 
 """
-Guess row and column function
+Ship Row/Col varible for ship to be hit at random placements
 """
 ship_row = random_row(board)
 ship_col = random_col(board)
@@ -35,7 +36,6 @@ ship_col = random_col(board)
 """
 Enter username function and welcome to battleships game
 """
-
 
 def get_username():
     while True:
@@ -51,12 +51,15 @@ def get_username():
 
 username = get_username()
 
-
 def print_board(board):
     for row in board:
         print(Back.GREEN + "".join([col if col != "S" else "0" for col in row]))
 
-
+"""
+Play Game function while loop including 
+board range, how many ships left, if user has
+hit a ship and print statment when they have won
+"""
 def play_game():
     ships_left = 1
     while ships_left > 0:
@@ -87,7 +90,11 @@ def play_game():
             board[guess_row][guess_col] = "P"
     print("Congrats, you won!")
 
-
+"""
+Play Again function, including loop 
+string for user to answer if they 
+would like to play again
+"""
 def play_again():
     while True:
         play_game()
