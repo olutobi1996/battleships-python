@@ -1,15 +1,22 @@
 # Battleships-Python
-Battleships-Python is a command-line interface game. To represent the board, i created the letter "O" to represent each table column and row. When someone makes a move, the CLI will tell me and a ship will display on the user/computer board. To fire a shot you use the "X" and aim using any number below the range of the columns and rows which is 5.
+Battleships-Python is a command-line interface game. To represent the board, i created the letter "O" to represent each table column and row. When someone makes a move, the CLI will tell me and a ship will display on the user/computer board. To fire a shot you use the "X" and aim using any number below the range of the columns and rows which is 5. I built the board by creating  a "board = []" varible and then creating the range of rows and columns using this function. "for i in range (0, 5): board.append(["0"]*5)"
 
 
-![Python-BattleShips-Game]()
+![![Python Battlehips Layout](<Screenshot 2024-09-13 203258.png>)]()
 
 ### Existing Features
 
-To start the game you write "python3 run.py" and press Enter, after entered you will have "username" input and after entering username you will start the game. There will be one board displayed. The CLI was ask you to guess the column or row of the computers board and try and hit a ship. Once the shot has been taken the CLI will return a statement wether you have hit or missed. It will also display the computers board and where the shots you have taken.
+To start the game you run "python3 run.py" in the CLI and press Enter, after entered you will have "username" input and after entering username you will start the game. There will be one board displayed. The CLI was ask you to guess the column or row of the computers board and try and hit a ship. Once the shot has been taken the CLI will return a statement wether you have hit or missed. It will also display the computers board and where the shots you have taken. I created the username by printing a string statement to the console def get_username(): "print(Fore.RED + f"The great Battleships, are you ready for war! {user_name}!")", i also used a while loop to make sure the user entered in a correct username.
+         
+
+![![Guess Row & Column](<Screenshot 2024-09-13 203315.png>)]()
 
 Creating a new game
 Once all the ships on either board have been hit, the  "if ship_row == guess_row and ship_col == guess_col:" function that calls where the ships are hit will run a loop and end the game if this is true. the console will print("Congrats, you won!"). You will be asked a question ('do you want to restart Y/N?') & if the response is Y, the play_again fucntion will start a new game if not the console will print("Goodbye My Lover").
+
+Colorama
+I Have also imported colorama into the run.py file, this has allowed me to style the battleships game board for the user making it visually enjoyable, i have also styled the username red by coloring the text red, this is also for the slight affect for the user making it a bit vissually interesting.
+![Colorama](<Screenshot 2024-09-13 204648.png>)  ![Colorama](<Screenshot 2024-09-13 204725.png>)
 
 
 ### Features Left to Implement
