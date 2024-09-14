@@ -105,5 +105,5 @@ def play_again():
             continue
         print("Goodbye My Lover")
         return
-play_game()
+play_again()
 
