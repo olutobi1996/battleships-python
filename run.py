@@ -16,6 +16,16 @@ Board Function
 for i in range(0, 5):
     board.append(["0"] * 5)
 """
+New Board Function
+"""
+def new_board():
+    board = []
+    for i in range(0, 5):
+        board.append(["0"] * 5)
+    ship_row = random_row(board)
+    ship_col = random_col(board)
+
+"""
 Ships Positions
 Ship 1
 """
@@ -54,6 +64,15 @@ username = get_username()
 def print_board(board):
     for row in board:
         print(Back.GREEN + "".join([col if col != "S" else "0" for col in row]))
+
+def create_ships():
+    ships = 0
+    while ships < 4:
+        random_row = random.randint(0, grid_size - 1)
+        random_col = random.randint(0, grid_size - 1)
+        if boardoard[random_row][random_col] == '.':
+            boardoard[random_row][random_col] = 'S'
+            ships +=1
 
 """
 Play Game function while loop including 

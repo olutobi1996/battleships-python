@@ -14,7 +14,7 @@ To start the game you run "python3 run.py" in the CLI and press Enter, after ent
 Creating a new game
 Once all the ships on either board have been hit, the  "if ship_row == guess_row and ship_col == guess_col:" function that calls where the ships are hit will run a loop and end the game if this is true. the console will print("Congrats, you won!"). You will be asked a question ('do you want to restart Y/N?') & if the response is Y, the play_again fucntion will start a new game if not the console will print("Goodbye My Lover").
 
-![alt text](<Screenshot 2024-09-15 170451.png>)
+![Creating new game](<Screenshot 2024-09-15 170451.png>)
 
 Colorama
 I Have also imported colorama into the run.py file, this has allowed me to style the battleships game board for the user making it visually enjoyable, i have also styled the username red by coloring the text red, this is also for the slight affect for the user making it a bit vissually interesting.
