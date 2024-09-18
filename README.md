@@ -1,5 +1,5 @@
 # Battleships-Python
-Battleships-Python is a command-line interface game. To represent the board, i created the letter "O" to represent each table column and row. When someone makes a move, the CLI will tell me and a ship will display on the user/computer board. To fire a shot you use the "X" and aim using any number below the range of the columns and rows which is 5. I built the board by creating  a "board = []" varible and then creating the range of rows and columns using this function. "for i in range (0, 5): board.append(["0"]*5)"
+Battleships-Python is a command-line interface game. To represent the board, i created the letter "O" to represent each table column and row. When someone makes a move, the CLI will tell me and a ship will display on the user/computer board. To fire a shot you type any number below the range of the columns and rows which is 5 and if you hit a ship it will show "X" on the board and if you miss it will show "M". I built the board by creating  a "board = []" varible and then creating the range of rows and columns using this function. "for i in range (0, 5): board.append(["0"]*5)"
 
 
 ![alt text](<Screenshot 2024-09-13 203258-1.png>)
@@ -7,7 +7,11 @@ Battleships-Python is a command-line interface game. To represent the board, i c
 ### Existing Features
 
 To start the game you run "python3 run.py" in the CLI and press Enter, after entered you will have "username" input and after entering username you will start the game. There will be one board displayed. The CLI was ask you to guess the column or row of the computers board and try and hit a ship. Once the shot has been taken the CLI will return a statement wether you have hit or missed. It will also display the computers board and where the shots you have taken. I created the username by printing a string statement to the console def get_username(): "print(Fore.RED + f"The great Battleships, are you ready for war! {user_name}!")", i also used a while loop to make sure the user entered in a correct username.
-         
+
+Also within the battle ships game you will be notified on the board when you have missed with the letter "M" showing on the board.
+Also you will have an "X" show up on the board when you have hit the ship, there are 4 ships to take down during the game, at the end of the game you will be notified by the game that you won and how many shots it took you. I created this by using a string statement in my play game function, and also a loop for when you take each shot and what it returns if you hit, miss or write a number outside the range.
+
+![alt text](<Screenshot 2024-09-18 190257.png>)
 
 ![alt text](<Screenshot 2024-09-13 203315-1.png>)
 
