@@ -22,8 +22,6 @@ def new_board():
     board = []
     for i in range(0, 5):
         board.append(["0"] * 5)
-    ship_row = random_row(board)
-    ship_col = random_col(board)
 
 """
 Ships Positions
@@ -68,10 +66,10 @@ def print_board(board):
 def create_ships():
     ships = 0
     while ships < 4:
-        random_row = random.randint(0, grid_size - 1)
-        random_col = random.randint(0, grid_size - 1)
-        if boardoard[random_row][random_col] == '.':
-            boardoard[random_row][random_col] = 'S'
+        random_row = random.randint(0, len(board[0]) - 1)
+        random_col = random.randint(0, len(board[0]) - 1)
+        if board[random_row][random_col] == "".join:
+            board[random_row][random_col] = 'S'
             ships +=1
 
 """
@@ -81,6 +79,8 @@ hit a ship and print statment when they have won
 """
 def play_game():
     ships_left = 1
+    new_board()
+    create_ships()
     while ships_left > 0:
         print_board(board)
         while True:
@@ -118,11 +118,8 @@ def play_again():
     while True:
         play_game()
         restart = input("do you want to restart Y/N?")
-        if restart == "N":
-            break
-        elif restart == "Y":
-            continue
-        print("Goodbye My Lover")
-        return
+        if restart.lower() == "N":
+            print("Goodbye My Lover")
+            return
 play_again()
 
