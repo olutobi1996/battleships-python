@@ -1,6 +1,7 @@
 import random
 import colorama
 from colorama import Fore, Back, Style
+from colorama import init
 
 
 """
@@ -11,7 +12,7 @@ def get_username():
         user_name = input("Enter username here: ")
         if user_name:
             print(
-                Fore.RED + f"The great Battleships, are you ready for war! {user_name}!"
+                Fore.WHITE + f"The great Battleships, are you ready for war! {user_name}!"
             )
             return user_name
         else:
@@ -31,7 +32,7 @@ def new_board():
 
 def print_board(board):
     for row in board:
-        print(Back.GREEN + "".join([col if col != "S" else "0" for col in row]))
+        print(Back.CYAN + "".join([col if col != "S" else "0" for col in row]))
 
 def create_ships(board):
     ships = 0
