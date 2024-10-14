@@ -30,12 +30,22 @@ I Have also imported colorama into the run.py file, this has allowed me to style
 - Another feature idea that i want to add in the future is a multiplayer game where you can play two users against the computer.
 - I also would like to expand the rows and columns of the board with more ships to be taken down.
 
-## Testing 
+# Manual Testing
 
-- The website has been tested numerous times to make sure the game runs smoothly, i also had a friend and my tutor test the game out on other computers to make sure.
-- Also within the game there are functions that test if the user has input something incorrect, i.e i created the board columns and rows to be within 5 by 5, so if the user his numbers outside this range there will be a message to say ""Invalid Number". I created this by using a loop to make sure the user enters a correct number and the loop will continue until they have done so.
--I also created within the loop a "elif board[guess_row][guess_col] = print("You Have Already Hit This Spot!") continue" so if the user has already hit a ship they will have a message pop up saying "You Have Already Hit This Spot!".
+[Go to README](README.md)
 
+| Testcase                          | Expected Result                                                       | Test Result |
+|-----------------------------------|-----------------------------------------------------------------------|-------------|
+| Type in username                  | string will be added to screen displaying username                    | ✅ PASS          |
+| Type in number in username output | string will apear "please enter username"                             | ✅ PASS          |
+| Enter number within row/col range | string will apear "You Must Enter A Number Between 0-4!"              | ✅ PASS          |
+| Guess area hit on ship            | string will apear "You Have Already Hit This Spot!"                     ✅PASS          |
+| Guess correct ship area             string will apear  "Bang, What A Hit! You Smashed My Ship"            | ✅ PASS          |
+| Guess wrong area on ship          | string will apear "Unlucky you missed"                                | ✅ PASS          |
+| When user wins the game               string will apear "Congrats, you won! You needed {shots_taken}      | ✅ PASS          |
+| When user restarts the game       | string will apear "do you want to restart Y/N?                          ✅ PASS   
+| When user leaves game             | string will apear "Goodbye My Lover"                                  | ✅ PASS          |
+|                                                                                  
 
 ### Validator Testing 
 https://pep8ci.herokuapp.com/#

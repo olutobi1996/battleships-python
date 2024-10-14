@@ -61,7 +61,7 @@ def play_game():
             except ValueError:
                 print(Fore.RED + "Invalid Number")
                 continue
-            if guess_row not in range(0, 5) and guess_col not in range(0, 5):
+            if guess_row not in range(0, 5) or guess_col not in range(0, 5):
                 print(Fore.RED + "You Must Enter A Number Between 0-4!")
                 continue
             elif board[guess_row][guess_col] == "X":
