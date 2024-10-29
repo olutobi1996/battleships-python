@@ -2,7 +2,7 @@
 Battleships-Python is a command-line interface game. To represent the board, i created the letter "O" to represent each table column and row. When someone makes a move, the CLI will tell me and a ship will display on the user/computer board. To fire a shot you type any number below the range of the columns and rows which is 5 and if you hit a ship it will show "X" on the board and if you miss it will show "M". I built the board by creating  a "board = []" varible and then creating the range of rows and columns using this function. "for i in range (0, 5): board.append(["0"]*5)"
 
 
-![alt text](<Screenshot 2024-09-13 203258-1.png>)
+![image](https://github.com/user-attachments/assets/228b7e10-2e04-40a1-8e40-ae2c958e18ac)
 
 ### Existing Features
 
@@ -11,18 +11,19 @@ To start the game you run "python3 run.py" in the CLI and press Enter, after ent
 Also within the battle ships game you will be notified on the board when you have missed with the letter "M" showing on the board.
 Also you will have an "X" show up on the board when you have hit the ship, there are 4 ships to take down during the game, at the end of the game you will be notified by the game that you won and how many shots it took you. I created this by using a string statement in my play game function, and also a loop for when you take each shot and what it returns if you hit, miss or write a number outside the range.
 
-![alt text](<Screenshot 2024-09-18 190257.png>)
+![image](https://github.com/user-attachments/assets/934f4500-4a41-43ed-b5c3-383bd036f2d5)
 
-![alt text](<Screenshot 2024-09-13 203315-1.png>)
+
+![image](https://github.com/user-attachments/assets/13ce1272-e19b-4489-b638-a5e46fb5b93c)
 
 Creating a new game
 Once all the ships on either board have been hit, the  "if ship_row == guess_row and ship_col == guess_col:" function that calls where the ships are hit will run a loop and end the game if this is true. the console will print("Congrats, you won!"). You will be asked a question ('do you want to restart Y/N?') & if the response is Y, the play_again fucntion will start a new game if not the console will print("Goodbye My Lover").
 
-![Creating new game](<Screenshot 2024-09-15 170451.png>)
+![image](https://github.com/user-attachments/assets/b52e9bec-13bb-4b71-8853-d81adf054ee5)
 
 Colorama
-I Have also imported colorama into the run.py file, this has allowed me to style the battleships game board for the user making it visually enjoyable, i have also styled the username red by coloring the text red, this is also for the slight affect for the user making it a bit vissually interesting.
-![Colorama](<Screenshot 2024-09-13 204648.png>)  ![Colorama](<Screenshot 2024-09-13 204725.png>)
+I Have also imported colorama into the run.py file, this has allowed me to style the battleships game board for the user making it visually enjoyable, i have also styled the text red and the board blue, this is also for the slight affect for the user making it a bit visually interesting.
+![image](https://github.com/user-attachments/assets/c63c6c38-9359-4c0b-a1f7-6200c5e24182)
 
 
 ### Features Left to Implement
