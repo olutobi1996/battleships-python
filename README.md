@@ -23,7 +23,7 @@ Once all the ships on either board have been hit, the  "if ship_row == guess_row
 
 Colorama
 I Have also imported colorama into the run.py file, this has allowed me to style the battleships game board for the user making it visually enjoyable, i have also styled the text red and the board blue, this is also for the slight affect for the user making it a bit visually interesting.
-![image](https://github.com/user-attachments/assets/c63c6c38-9359-4c0b-a1f7-6200c5e24182)
+![image](https://github.com/user-attachments/assets/efb7a5f2-2e47-433d-a36e-9dc9c1dba939)
 
 
 ### Features Left to Implement
